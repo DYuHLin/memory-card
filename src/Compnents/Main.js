@@ -13,50 +13,20 @@ const Main = () => {
 
             </div>
             <div className="main">
-                <div className="card">
-                    <div className="character">
-                        <img src="./Assets/Pics/gin.jpg"></img>
-                    </div>
-                    <div className="character-name">
-                        Gintoki
-                    </div>
+            
+                {picArray.map((pic, id) => {
+                    return (
+                    <div className="card">
+                        <div className="character">
+                            <img src={`./Assets/Pics/${pic}.jpg`}></img>
+                        </div>
+                        <div className="character-name">
+                            {pic}
+                        </div>
                 </div>
+                    )
+                })}
 
-                <div className="card">
-                    <div className="character">
-
-                    </div>
-                    <div className="character-name">
-                        
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="character">
-
-                    </div>
-                    <div className="character-name">
-                        
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="character">
-
-                    </div>
-                    <div className="character-name">
-                        
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="character">
-
-                    </div>
-                    <div className="character-name">
-                        
-                    </div>
-                </div>
             </div>
         </div>
     );
