@@ -5,9 +5,6 @@ const Header = () => {
     return(
         <div>
             <div className='header'>
-                <div className="logo">
-                    <img src="./Assets/logo.png"></img>
-                </div>
                 <div className='title'>Gintama Memory Game</div>
                 <div className='link'>
                     <a href='https://github.com/DYuHLin/cv-application'><i class='bx bxl-github'></i></a>              
