@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 
 const Main = () => {
-    const pics = ["catherine.jpg", "elizabeth.jpg", "gin.jpg", "hijikata.jpg", "kagura.jpg", "kondo.png", "madao.jpg", "okita.png", "otae.jpg",
-                  "otose.jpg", "princehata.jpg", "sadaharu.jpg", "shin.jpg", "shoyo.jpg", "takasugi.jpg", "tama.png", "tsukuyo.jpg", "zura.jpg",
-                  "yamazaki.png", "sakamoto.jpg"];
+    const pics = ["catherine", "elizabeth", "gin", "hijikata", "kagura", "kondo", "madao", "okita", "otae",
+                  "otose", "princehata", "sadaharu", "shin", "shoyo", "takasugi", "tama", "tsukuyo", "zura",
+                  "yamazaki", "sakamoto"];
+
     const [picArray, setPicArray] = useState(pics);
 
     return(
@@ -12,7 +13,50 @@ const Main = () => {
 
             </div>
             <div className="main">
+                <div className="card">
+                    <div className="character">
+                        <img src="./Assets/Pics/gin.jpg"></img>
+                    </div>
+                    <div className="character-name">
+                        Gintoki
+                    </div>
+                </div>
 
+                <div className="card">
+                    <div className="character">
+
+                    </div>
+                    <div className="character-name">
+                        
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="character">
+
+                    </div>
+                    <div className="character-name">
+                        
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="character">
+
+                    </div>
+                    <div className="character-name">
+                        
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="character">
+
+                    </div>
+                    <div className="character-name">
+                        
+                    </div>
+                </div>
             </div>
         </div>
     );
