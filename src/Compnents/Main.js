@@ -34,9 +34,11 @@ const Main = () => {
     };
 
     useEffect(() => {
-        const shuffledCards = [...picArray];
-        setPicArray(shuffledCards);
-    }, []);
+        if(highScore < score){
+            setHighScore(score);
+        }
+        
+    }, [score, highScore]);
 
     console.log(picArray);
     return(

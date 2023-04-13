@@ -4,14 +4,14 @@ const Grid = (props) => {
 
     return (
         <>
-        <div key={props.character} className="card" onClick={() => props.game(props.character)}>
-                        <div className="character">
+                    <div className="card" >
+                        <div key={props.character} onClick={() => props.game(props.character)} className="character">
                             <img src={`./Assets/Pics/${props.character}.jpg`} alt={props.character}></img>
                         </div>
                         <div className="character-name">
                             {props.character}
                         </div>
-                </div>
+                    </div>
         </>
     );
 };
