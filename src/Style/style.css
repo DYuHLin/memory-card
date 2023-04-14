@@ -6,6 +6,8 @@
 }
 
 .App{
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background-color: #2d8cb4;  
 }
@@ -93,4 +95,24 @@ img{
     border-radius: 8px;
     font-weight: 500;
     font-size: 22px;
+}
+
+@media screen and (max-width: 1210px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 915px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
