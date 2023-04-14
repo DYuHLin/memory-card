@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Grid from "./Piece/Grid";
+import Score from "./Piece/Score";
 
 const Main = () => {
     const pics = ["catherine", "elizabeth", "gin", "hijikata", "kagura", "kondo", "madao", "okita", "otae",
@@ -21,13 +22,9 @@ const Main = () => {
            if(newArray.includes(character)){
                 setNewArray([]);
                 setScore(0);
-                console.log(score);
-                console.log(newArray);
            } else {
             setNewArray([...newArray, character]);
             setScore(score + 1);
-            console.log(score);
-            console.log(newArray);
            };
 
         
@@ -40,13 +37,9 @@ const Main = () => {
         
     }, [score, highScore]);
 
-    console.log(picArray);
     return(
         <div className="body">
-            <div className="info">
-            <div className="score">Score: {score}</div>
-            <div className="score">High Score: {highScore}</div>
-            </div>
+            <Score score = {score} highScore = {highScore} />
             <div className="main">
             
                 {shuffleArray(picArray).map((pic, id) => {
